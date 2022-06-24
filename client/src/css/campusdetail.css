@@ -141,3 +141,14 @@
     background-color: #eeeeee;
     margin: 10% 40% 0 0%;
 }
+
+.campus-img{
+  margin-top: 13%;
+}
+
+.campus-link{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 32px;
+  color: #ffffff;
+}

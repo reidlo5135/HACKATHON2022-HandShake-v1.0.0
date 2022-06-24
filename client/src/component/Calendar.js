@@ -9,6 +9,8 @@ import { useLocation } from 'react-router';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Hlogo from "../img/handshake.png";
+
 
 export default function Calendar(){
     const [details, setDetails] = useState([]);
@@ -54,6 +56,9 @@ useEffect(() => {
             exit={{ opacity: 0 }}
             transition={{ ease: "easeOut", duration: 1 }}
         >
+            <div className='f-logo'>
+                <img src={Hlogo} alt="handshake 로고" className='h-logo'/>
+            </div>
         
             <div className='C-contents'>
                 <div className='C-left-contents'>

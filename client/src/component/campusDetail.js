@@ -7,6 +7,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useLocation } from 'react-router';
 import gateNames from "../data/campusConfig";
+
+import Hlogo from "../img/handshake.png";
+
 import Ds from "../img/Ds.png";
 import Sa from "../img/Sa.png";
 import Sh from "../img/Sh.png";
@@ -20,6 +23,7 @@ import Hl from "../img/Hl.png";
 import Hg from "../img/Hg.png";
 
 const URL = "https://teachablemachine.withgoogle.com/models/DKLnLWS-K/"
+
 
 export default function CampusDetail(){
     const [details, setDetails] = useState([]);

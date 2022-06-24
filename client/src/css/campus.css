@@ -29,6 +29,18 @@
     position: relative;
     left: 100%;
     background-color: #eeeeee;
+
+}
+
+.campus-slide .slick-slider{
+    width: 500px;
+    background-color: #3D84FC;
+    color: #eeeeee;
+}
+
+.campus-img > img{
+    margin-top: 10%;
+
 }
 
 .campus-slide .slick-slider{
@@ -56,6 +68,9 @@ text-decoration: none;
     margin-top : 150px;
     margin-left : 500px;
 
+
+.campus-img >p{
+text-decoration: none;
 }
 
 #webcam-container canvas {

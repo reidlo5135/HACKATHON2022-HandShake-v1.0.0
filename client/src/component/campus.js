@@ -8,6 +8,9 @@ import {slickNext} from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+
+import gateNames from '../data/campusConfig';
+
 import {useRef} from 'react';
 import Spin from '../img/spin.gif'
 import $ from 'jquery';
@@ -23,12 +26,17 @@ import Jb from "../img/Jb.png";
 import Js from "../img/Js.png";
 import Tg from "../img/Tg.png";
 import Hl from "../img/Hl.png";
+import Hg from "../img/Hg.png";
+import Hlogo from "../img/handshake.png";
+
 
 const buildArray = ['dasan','suam','sang','yul','im','car','computer','info','toi','hanrim','hongji']
 let buildStatus = 0;
 const URL = "https://teachablemachine.withgoogle.com/models/DKLnLWS-K/"
 
+
 export default function Campus(){
+
     const [gateName, setGateName] = useState([]);
     let model, webcam, labelContainer, maxPredictions;
     let status = '';
@@ -175,6 +183,12 @@ export default function Campus(){
                 exit={{ opacity: 0 }}
                 transition={{ ease: "easeOut", duration: 1 }}
             >
+
+                <div className='f-logo'>
+                    <img src={Hlogo} alt="handshake 로고" className='h-logo'/>
+                </div>
+
+
                 <div className='contents'>
                     <div className='left-contents'>
                         <div className='campus-slide'>

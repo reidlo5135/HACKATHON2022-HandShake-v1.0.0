@@ -1,42 +1,4 @@
-.calendar-figure1{
-    position: relative;
-    width: 130px;
-    height: 30px;
-    left: 68%;
-    top: 30px;
-    background: #3D84FC;
-}
 
-.calendar-figure2{
-    position: relative;
-    width: 130px;
-    height: 30px;
-    left: 65%;
-    top: 50px;
-    background: #3D84FC;
-    transform: rotate(90deg);
-    z-index: 6;
-}
-
-.calendar-figure3{
-    position: relative;
-    width: 130px;
-    height: 30px;
-    left: 1771px;
-    top: 120px;
-    background: #3D84FC;
-    transform: rotate(-90deg);
-}
-
-.calendar-figure4{
-    position: relative;
-    width: 130px;
-    height: 30px;
-    left: 1700px;
-    top: 140px;
-    background: #3D84FC;
-    transform: rotate(-180deg);
-}
 
 .calendar-tit{
     position: absolute;
@@ -56,6 +18,7 @@
 
 .C-left-contents{
     position: relative;
+    bottom: 100px;
     left: 18%;
     z-index: 6;
 }
@@ -67,6 +30,7 @@
 
 .C-right-contents{
     position: relative;
+    top: 50px;
     right: 5%;
     width: 50%;
     z-index: 5;
@@ -80,50 +44,51 @@
 }
 
 .month{
+   
     font-size: 32px;
     font-weight: bold;
     color: #3D84FC;
+    margin-top:1%;
 }
 /*캘린더*/
 .c-container {
-    position: absolute;
-    top: 534%;
-    left: 70.5%;
     transform: translate(-50%, -50%);
 }
 
-table {
+.tc-table {
 	width: 800px;
+    margin-top: 75%;
+    margin-left: 154%;
 	border-collapse: collapse;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-th,
-td {
+.t-th,
+.t-td {
 	padding: 15px;
 	background-color: rgba(255,255,255,0.2);
 	color: black;
     border: solid 1px #eeeeee;
 }
 
-th {
+.t-th {
 	text-align: left;
 }
 
-thead th{
+.t-thead .t-th{
 	background-color: #3D84FC;
 }
 
-tbody tr:hover {
+.t-tbody .t-tr:hover {
 	background-color: rgba(255,255,255,0.3);
 }
 
-tbody td{
+.t-tbody .t-td{
     position: relative;
 }
 
-tbody td::before{
+.t-tbody .t-td::before{
     content: "";
 	position: absolute;
 	left: 0;
@@ -136,7 +101,20 @@ tbody td::before{
 
 .slick-slider{
     left: -150px;
-    width: 850px;
+    width: 900px;
     background-color: #ffffff;
-    height: 500px;
+    height: 600px;
 }
+
+.C-left-contents .slick-list{
+    height: 800px;
+}
+
+.C-left-contents .slick-dots{
+    bottom: -55px;
+}
+
+.cl-desc{
+    font-size: 8px;
+}
+

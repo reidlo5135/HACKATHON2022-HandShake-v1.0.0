@@ -22,7 +22,6 @@ export default function Campus(){
             console.error(error);
         }
     }
-
     useEffect(() => {
         getGateName();
     }, []);
@@ -66,7 +65,10 @@ export default function Campus(){
 
                     {gateName.map(user => {
                     return (
-                        <Link to='campus/detail' key={user.id}>
+                        <Link to={{
+                            pathname: '/gate/details',
+                            state: user.name     
+                  }} key={user.id}>
                             <div>
                                 {user.name}
                             </div>

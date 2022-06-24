@@ -19,9 +19,9 @@ export default function CampusDetail(){
     const getGateDetails = async () => {
         try {
             const response = await fetch(`/api/campus/gates/details/${name}`, {method: 'post'});
-            const body = response.json();
-            console.log('campusDetail.js response : ', response);
-            console.log('campusDetail.js body : ', body);
+            const body = await response.json();
+            console.log('campusDetail.js getGateDetails response : ', response);
+            console.log('campusDetail.js getGateDetails body : ', body);
         } catch (error) {
             console.error(error);
         }

@@ -1,0 +1,85 @@
+.contents{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-contents{
+    position: relative;
+    right:11%;
+    z-index: 6;
+}
+
+.right-contents{
+    position: relative;
+    right: 10%;
+    width: 50%;
+    z-index: 5;
+}
+
+.campus-cam{
+    float: right;
+    width: 500px;
+    height: 500px;
+    background-color: #eeeeee;
+}
+
+.campus-figure1{
+    position: relative;
+    width: 130px;
+    height: 30px;
+    left: 68%;
+    top: 30px;
+    background: #3D84FC;
+}
+
+.campus-figure2{
+    position: relative;
+    width: 130px;
+    height: 30px;
+    left: 65%;
+    top: 50px;
+    background: #3D84FC;
+    transform: rotate(90deg);
+    z-index: 6;
+}
+
+.campus-figure3{
+    position: relative;
+    width: 130px;
+    height: 30px;
+    left: 1771px;
+    top: 120px;
+    background: #3D84FC;
+    transform: rotate(-90deg);
+}
+
+.campus-figure4{
+    position: relative;
+    width: 130px;
+    height: 30px;
+    left: 1700px;
+    top: 140px;
+    background: #3D84FC;
+    transform: rotate(-180deg);
+}
+
+.campus-tit{
+    position: absolute;
+    background-color: #eeeeee;
+    padding: 3% 5% 3% 5%;
+    left: 76%;
+    top: 8%;
+}
+
+.campus-slide{
+    position: relative;
+    left: 80%;
+    background-color: #eeeeee;
+}
+
+.campus-slide .slick-slider{
+    width: 600px;
+    background-color: #eeeeee;
+}

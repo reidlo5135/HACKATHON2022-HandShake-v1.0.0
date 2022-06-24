@@ -1,0 +1,93 @@
+body{
+    background-color: #ffffff;
+}
+
+.select-tit{
+    text-align: center;
+    margin-top: 20px;
+    font-size:50px;
+    font-weight: bold;
+    color:#3D84FC;
+}
+
+.select{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.left-content{
+    width:40%;
+    display: flex;
+    margin-left: 150px;
+    flex-wrap: wrap;
+    float: left;
+}
+.one > span ,.two2 > span,.three > span,.four > span{
+    font-size: 36px;
+    font-weight: bold;
+    color:#3D84FC
+}
+
+.btn-selcet{
+    width: 300px;
+    height: 300px;
+    background-color: #005AFF;
+    margin: 20px 20px;
+    border-radius: 39px;
+    display: flex
+}
+
+.square1{
+    position: absolute;
+    width: 572px;
+    height: 278px;
+    left: 1463.94px;
+    top: -110px;
+    background: #005AFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(21.96deg);
+}
+
+.square2{
+    position: absolute;
+    width: 369.6px;
+    height: 191px;
+    left: 1050px;
+    top: 400px;
+    background: #005AFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-30.09deg);
+    z-index: 1;
+}
+
+.square3{
+    position: absolute;
+    width: 327.66px;
+    height: 237.99px;
+    left: 1559px;
+    top: 817.66px;
+    background: #005AFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(-21.61deg);
+    z-index: 1;
+}
+
+.right-content{
+    z-index: 5;
+    margin: 10% 0 0 0%;
+}
+
+.cam{
+    float: right;
+    width: 500px;
+    height: 500px;
+    background-color: #eeeeee;
+}
+
+.tuto-desc{
+    z-index: 5;
+    text-align: center;
+    font-size: 24px;
+    color:#3D84FC;
+}

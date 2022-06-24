@@ -1,22 +1,16 @@
 const express = require('express');
-const app = express();
-const port = 3001;
-const cors = require('cors');
-const bodyParser = require('body-parser');
+const router = express.Router();
+const mysql = require('mysql');
+const dbinfo = require('../env/dbEnv');
+const connection = mysql.createConnection(dbinfo);
 
-app.use(bodyParser.urlencoded({extended:true}));
-app.use(bodyParser.json());
-app.use(cors());
-
-app.get('/', (req, res) => {
-   res.send('HI!!!!!!');
+router.get('/api/db/test', (req, res) => {
+   connection.query('SELECT * FROM testTable', (error, rows, fields) => {
+      if(error) throw error;
+      console.log('TEST DB INFO rows : ' + JSON.stringify(rows));
+      console.log('TEST DB INFO fields : ' + JSON.stringify(fields));
+      res.send(rows);
+   });
 });
 
-app.post('/hello', (req, res) => {
-   const serverid = req.body.id;
-    console.log(serverid);
-});
-
-app.listen(port, () => {
-    console.log(`Connect at http://localhost:${port}`);
-});
+module.exports = router;

@@ -9,7 +9,7 @@
 <b>HANDSHAKE</b>는 사용자가 취하는 모습을 촬영 후 AI로 인식하여 원하는 기능을 맞추어 제공하는 웹 서비스입니다. <br><br>
 
 ## <b>사용기술</b>
-<img src="https://img.shields.io/badge/react-0769AD?style=for-the-badge&logo=react&logoColor=White">
+<span><img src="https://img.shields.io/badge/react-0769AD?style=for-the-badge&logo=react&logoColor=White">
 <img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
 <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white">
@@ -26,7 +26,7 @@
 <img src="https://img.shields.io/badge/Adobe PhotoShop-31A8FF?style=for-the-badge&logo=Adobe PhotoShop&logoColor=white">
 <img src="https://img.shields.io/badge/Adobe XD-FF61F6?style=for-the-badge&logo=Adobe XD&logoColor=white">
 <img src="https://img.shields.io/badge/Intellij IDEA-000000?style=for-the-badge&logo=IntelliJ Idea&logoColor=white">
-<img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white">
+<img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=for-the-badge&logo=Visual Studio Code&logoColor=white"></span>
 
 - Design - Figma, Adobe PhotoShop, Adobe XD
 - Frontend - React.js, HTML5, CSS3, JavaScript, TensorFlow, Teachable Machine

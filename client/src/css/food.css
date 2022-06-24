@@ -1,3 +1,8 @@
+.f-logo{
+    margin:3%;
+    text-align: center;
+}
+
 .food-figure1{
     position: relative;
     width: 130px;
@@ -68,14 +73,21 @@
 }
 
 .f-container {
-    position: absolute;
-    top: 534%;
-    left: 70.5%;
-    transform: translate(-50%, -50%);
+    margin-top: 19%;
+    margin-left: 8%;
+}
+
+.food-title{
+    width: 750px;
+    margin-bottom: 3%;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    color: #3D84FC;
 }
 
 table {
-    width: 800px;
+    width: 730px;
     border-collapse: collapse;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);

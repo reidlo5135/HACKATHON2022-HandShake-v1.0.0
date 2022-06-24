@@ -17,12 +17,13 @@ body{
 }
 
 .left-content{
-    width:50%;
+    width:40%;
     display: flex;
     margin-left: 150px;
     flex-wrap: wrap;
+    float: left;
 }
-.one > span ,.two > span,.three > span,.four > span{
+.one > span ,.two2 > span,.three > span,.four > span{
     font-size: 36px;
     font-weight: bold;
     color:#3D84FC
@@ -73,11 +74,8 @@ body{
 }
 
 .right-content{
-    position: relative;
-    width: 50%;
-    right: 250px;
-    top: 110px;
     z-index: 5;
+    margin: 10% 0 0 0%;
 }
 
 .cam{

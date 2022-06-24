@@ -37,7 +37,7 @@ export default function Select(){
                             </Link>
                         </div>
 
-                        <div className='two'>
+                        <div className='two2'>
                             <span>B</span>
                             <Link to="/food">
                                 <div className="food btn-selcet">

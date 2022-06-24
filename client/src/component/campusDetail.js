@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import '../App.css';
 import "../css/food.css"
 import AOS from "aos";
@@ -8,6 +8,7 @@ import { useLocation } from 'react-router';
 import gateNames from "../data/campusConfig";
 
 export default function CampusDetail(){
+    const [details, setDetails] = useState([]);
     const location = useLocation();
     const gateName = location.state;
     const name = gateNames.get(gateName);
@@ -22,6 +23,8 @@ export default function CampusDetail(){
             const body = await response.json();
             console.log('campusDetail.js getGateDetails response : ', response);
             console.log('campusDetail.js getGateDetails body : ', body);
+            setDetails(body);
+            console.log('campusDetail.js getGateDetails body : ', details);
         } catch (error) {
             console.error(error);
         }
@@ -34,7 +37,20 @@ export default function CampusDetail(){
 
     return (
         <>
-
+            {details.map(detail => {
+                return(
+                    <div key={7}>
+                        <h1>{detail.name}</h1>
+                        <h2>{detail.f1}</h2>
+                        <h2>{detail.f2}</h2>
+                        <h2>{detail.f3}</h2>
+                        <h2>{detail.f4}</h2>
+                        <h2>{detail.f5}</h2>
+                        <h2>{detail.f6}</h2>
+                        <h2>{detail.f7}</h2>
+                    </div>
+                )})
+            }
         </>
     );
 }

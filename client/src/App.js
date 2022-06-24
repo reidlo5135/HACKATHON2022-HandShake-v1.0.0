@@ -1,35 +1,21 @@
-import React, {useState} from "react";
+import React from 'react';
 import './App.css';
+import {Route, Switch} from 'react-router-dom';
+import Main from "./component/Main";
+import Tutorial from "./component/Tutorial";
+import Select from "./component/Select";
+import {AnimatePresence} from "framer-motion";
 
-function App() {
-    const [id, setId] = useState(null);
-
-  const handleOnChange = (e) => {
-    [e.target.name] = e.target.value;
-    setId(e.target.value);
-  }
-
-  const submit = () => {
-      const post = {
-          id
-      };
-
-      fetch('http://localhost:3001/hello', {
-          method: 'post',
-          headers: {
-              'Content-type': 'application/json',
-          },
-          body: JSON.stringify(post),
-      });
-  }
-
-  return (
-    <div className="App">
-      <input onChange={handleOnChange} name={"id"} />
-      <button onClick={submit}>Submit</button>
-        <h1>{id}</h1>
-    </div>
-  );
+export default function App(){
+    return (
+        <div className='App'>
+            <AnimatePresence>
+                <Switch>
+                    <Route exact path = '/' component={Main}/>
+                    <Route path = '/tutorial' component={Tutorial}/>
+                    <Route path = '/select' component={Select}/>
+                </Switch>
+            </AnimatePresence>
+        </div>
+    );
 }
-
-export default App;

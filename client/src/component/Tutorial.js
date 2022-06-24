@@ -5,13 +5,27 @@ import Main from "./Main";
 import Select from "./Select";
 import "../css/tutorial.css"
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion"
 
 export default function Tutorial(){
     return (
         <>
-        <div className="tuto-title">
+        <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+        >
+        <motion.div 
+            initial={{ scale:0 }}
+            animate={{ scale:1 ,rotateZ: 360}}
+            transition={{ duration: 1,
+                type: "spring",
+                stiffness: 260,
+                damping: 20,}} 
+            className="tuto-title">
             TUTORIAL
-        </div>
+        </motion.div>
         <div className="sign-cam">
             
         </div>
@@ -34,6 +48,7 @@ export default function Tutorial(){
                 </button>
             </div>
         </Link>
+        </motion.div>
         </>
     );
 }

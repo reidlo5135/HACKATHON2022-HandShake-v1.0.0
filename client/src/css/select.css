@@ -21,6 +21,11 @@ body{
     margin-left: 150px;
     flex-wrap: wrap;
 }
+.one > span ,.two > span,.three > span,.four > span{
+    font-size: 36px;
+    font-weight: bold;
+    color:#3D84FC
+}
 
 .btn-selcet{
     width: 300px;
@@ -28,6 +33,7 @@ body{
     background-color: #005AFF;  
     margin: 20px 20px;  
     border-radius: 39px;
+    display: flex
 }
 
 .square1{

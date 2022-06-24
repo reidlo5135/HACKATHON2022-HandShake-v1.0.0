@@ -26,7 +26,7 @@ export default function Tutorial(){
             className="tuto-title">
             TUTORIAL
         </motion.div>
-        <div className="sign-cam">
+        <div className="tutorial-cam">
             
         </div>
         

@@ -1,16 +1,31 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../App.css';
-import {Route, Switch} from 'react-router-dom';
-import Main from "./Main";
-import Select from "./Select";
 import "../css/campus.css"
-import { Link } from "react-router-dom";
 import {motion} from "framer-motion"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export default function Campus(){
+    const [gateName, setGateName] = useState([]);
+
+    const getGateName = async ()=> {
+        try {
+            const response = await fetch('/api/campus/gates', {method: 'post'});
+            const body = await response.json();
+            console.log('campus.js response : ', response);
+            console.log('campus.js body : ', body);
+            setGateName(body);
+            console.log('gateName : ', gateName);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+    useEffect(() => {
+        getGateName();
+    }, []);
+
     const settings = {
         dots: true,
         infinite: true,

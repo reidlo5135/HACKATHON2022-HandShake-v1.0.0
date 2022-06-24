@@ -10,6 +10,7 @@ const port = 5000;
 
 var serverRouter = require('./routes/server');
 var campusRouter = require('./routes/campus/campusRouter');
+var foodRouter = require('./routes/food/foodRouter');
 
 var app = express();
 
@@ -24,6 +25,7 @@ app.use(cors());
 
 app.use('/', serverRouter);
 app.use('/', campusRouter);
+app.use('/', foodRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

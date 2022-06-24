@@ -21,7 +21,7 @@ body{
     z-index: 3;
 }
 
-.square{
+.tutorial-square{
     position: absolute;
     top:5%;
 }

@@ -36,7 +36,7 @@ export default function Tutorial(){
             
         </div>
         
-        <div className="square" data-aos="flip-up">
+        <div className="tutorial-square" data-aos="flip-up">
             <div className="square1" ></div>
             <div className="square2" ></div>
             <div className="square3"></div>

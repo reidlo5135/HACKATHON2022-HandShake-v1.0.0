@@ -25,61 +25,39 @@
     background-color: #eeeeee;
 }
 
-.campus-figure1{
-    position: relative;
-    width: 130px;
-    height: 30px;
-    left: 68%;
-    top: 30px;
-    background: #3D84FC;
-}
-
-.campus-figure2{
-    position: relative;
-    width: 130px;
-    height: 30px;
-    left: 65%;
-    top: 50px;
-    background: #3D84FC;
-    transform: rotate(90deg);
-    z-index: 6;
-}
-
-.campus-figure3{
-    position: relative;
-    width: 130px;
-    height: 30px;
-    left: 1771px;
-    top: 120px;
-    background: #3D84FC;
-    transform: rotate(-90deg);
-}
-
-.campus-figure4{
-    position: relative;
-    width: 130px;
-    height: 30px;
-    left: 1700px;
-    top: 140px;
-    background: #3D84FC;
-    transform: rotate(-180deg);
-}
-
-.campus-tit{
-    position: absolute;
-    background-color: #eeeeee;
-    padding: 3% 5% 3% 5%;
-    left: 76%;
-    top: 8%;
-}
-
 .campus-slide{
     position: relative;
-    left: 80%;
+    left: 100%;
     background-color: #eeeeee;
 }
 
 .campus-slide .slick-slider{
-    width: 600px;
-    background-color: #eeeeee;
+    width: 500px;
+    background-color: #3D84FC;
+    color: #eeeeee;
+}
+
+.campus-img > img{
+    margin-top: 10%;
+}
+
+.campus-img >p{
+text-decoration: none;
+}
+
+.campus-slide .slick-slider{
+    left:0
+}
+
+#webcam-container {
+    text-align: center;
+}
+#webcam-container img {
+    margin-top : 150px;
+    margin-left : 500px;
+
+}
+
+#webcam-container canvas {
+    margin-left : 500px;
 }

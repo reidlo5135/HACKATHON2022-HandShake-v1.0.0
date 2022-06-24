@@ -5,6 +5,7 @@ import todayMeal from '../../img/today_meal.png'
 import * as tmImage from '@teachablemachine/image';
 import {useEffect} from 'react';
 import logo from '../../img/handshake_logo.png'
+import Spin from '../../img/spin.gif'
 
 const URL = "https://teachablemachine.withgoogle.com/models/riXpFHlAu/";
 
@@ -15,24 +16,29 @@ export default function SelectTest () {
     let temp = 'None';
     let looping = 0;
 
-    setInterval(()=> {
-        let redbull = status;
-        console.log(looping)
-        if (temp !== redbull) {
-          console.log("이전값과 다릅니다.")
-          looping = 0;
-          temp = redbull;
-        } else {
-          if (looping === 6) {
-            
-            console.log("선택값은 " +redbull)
-            looping = 0;
-          } else {
-            looping++;
-          }
-          
-        }
-      },1000)
+    function timeTable() {
+        setInterval(()=> {
+            let redbull = status;
+            console.log(looping)
+            if (temp !== redbull) {
+              console.log("이전값과 다릅니다.")
+              looping = 0;
+              temp = redbull;
+            } else {
+              if (looping === 6) {
+                
+                console.log("선택값은 " +redbull)
+                if (redbull === 'A') {
+                    window.location.href = "/campus"
+                }
+                looping = 0;
+              } else {
+                looping++;
+              }
+              
+            }
+          },1000)
+    }
     
     useEffect(()=> {
         console.log("dd")
@@ -52,15 +58,18 @@ export default function SelectTest () {
 
         // Convenience function to setup a webcam
         const flip = true; // whether to flip the webcam
-        webcam = new tmImage.Webcam(730, 730, flip); // width, height, flip
+        webcam = new tmImage.Webcam(600, 600, flip); // width, height, flip
         await webcam.setup(); // request access to the webcam
         await webcam.play();
         console.log("캠 로딩 완료")
+        
         window.requestAnimationFrame(loop);
         
 
         // append elements to the DOM
+        document.getElementById("webcam-container").innerHTML = '';
         document.getElementById("webcam-container").appendChild(webcam.canvas);
+        timeTable();
         labelContainer = document.getElementById("label-container");
         for (let i = 0; i < maxPredictions; i++) { // and class labels
             labelContainer.appendChild(document.createElement("div"));
@@ -99,9 +108,7 @@ export default function SelectTest () {
     return (
         <>
           <div style ={{width : "100vw", height : "100vh"}}>
-          <div style = {{left : "1000px" ,top : "58px", margin : "0px", padding : "0px" , position : "absolute"}}>
-            <img src={logo} style={{width : "300px"}}/>
-          </div>
+         
             <div style={{display : "flex",width : "100vw", height : "100vh", justifyContent : "space-around", alignItems : "center"}}>
                 <div style={{width : "50px", height : "10px"}}></div>
                 <div style={{ display : "grid", width : "40vw", height : "80vh", justifyItems : "center", alignItems : "center"}}>
@@ -112,7 +119,9 @@ export default function SelectTest () {
         
                 </div>
              <div style={{  display : "flex" , justifyContent : "center", alignItems : "center",width : "40vw", height : "80vh"}}>
-                <div id="webcam-container"></div>
+                <div id="webcam-container">
+                    <img src={Spin}/>
+                </div>
                 {/* <div id="label-container"></div> */}
              </div>
              <div style={{width : "50px", height : "10px"}}></div>

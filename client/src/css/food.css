@@ -75,30 +75,30 @@
 }
 
 table {
-	width: 800px;
-	border-collapse: collapse;
-	overflow: hidden;
-	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 th,
 td {
-	padding: 15px;
-	background-color: rgba(255,255,255,0.2);
-	color: black;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.2);
+    color: black;
     border: solid 1px #eeeeee;
 }
 
 th {
-	text-align: left;
+    text-align: left;
 }
 
 thead th{
-	background-color: #3D84FC;
+    background-color: #3D84FC;
 }
 
 tbody tr:hover {
-	background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.3);
 }
 
 tbody td{
@@ -107,13 +107,13 @@ tbody td{
 
 tbody td::before{
     content: "";
-	position: absolute;
-	left: 0;
-	right: 0;
-	top: -9999px;
-	bottom: -9999px;
-	background-color: rgba(255,255,255,0.2);
-	z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    background-color: rgba(255,255,255,0.2);
+    z-index: -1;
 }
 
 .slick-slider{

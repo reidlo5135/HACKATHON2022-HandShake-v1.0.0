@@ -58,7 +58,7 @@ useEffect(() => {
             <div className='C-contents'>
                 <div className='C-left-contents'>
                 <Slider {...settings}>
-                <div className='month'>1월</div>
+                <div className='month'>6월</div>
                 <div className="c-container">
                     <table className='tc-table'>
                         <thead className='c-thead'>

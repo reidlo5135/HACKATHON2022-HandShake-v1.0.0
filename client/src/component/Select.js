@@ -42,16 +42,20 @@ export default function Select(){
                 <div className="left-content">
                     <div className='one'>
                         <span>A</span>
+                        <Link to="/campus">
                         <div className="campus btn-selcet">
                             <img src={Campus} alt="캠퍼스 아이콘" /> 
                         </div>
+                        </Link>
                     </div>
 
                     <div className='two'>
                         <span>B</span>
+                        <Link to="/food">
                         <div className="food btn-selcet">
                             <img src={Food} alt="오늘의 메뉴 아이콘"/>  
                         </div>
+                        </Link>
                     </div>
 
                     <div className='three'>

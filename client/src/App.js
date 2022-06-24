@@ -16,6 +16,6 @@ export default function App(){
                     <Route path = '/select' component={Select}/>
                 </Switch>
             </AnimatePresence>
-       </div>
+        </div>
     );
 }

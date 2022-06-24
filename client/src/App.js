@@ -19,7 +19,7 @@ export default function App(){
                     <Route path = '/select' component={Select}/>
                     <Route path = '/campus' component={Campus}/>
                     <Route path = '/food' component={Food}/>
-                    <Route path = '/campus/details' component={Campusdetail}/>
+                    <Route path = '/gate/details' component={Campusdetail}/>
                 </Switch>
             </AnimatePresence>
         </div>

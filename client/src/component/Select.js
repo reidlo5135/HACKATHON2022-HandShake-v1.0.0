@@ -60,8 +60,14 @@ export default function Select(){
                         </div>
                         </div>
                     </div>
-                
-                <div className="square">
+
+                <div className="right-content">
+                    <div className="cam">
+
+                    </div>
+                </div>  
+            </div>
+            <div className="square">
                     <motion.div className="square1"
                     initial={{ scale:0 }}
                     animate={{ scale:1 ,rotateZ: 200}}
@@ -88,13 +94,6 @@ export default function Select(){
                         stiffness: 260,
                         damping: 10, }}/>
                 </div>
-
-                <div className="right-content">
-                    <div className="cam">
-
-                    </div>
-                </div>  
-            </div>
             <div className="tuto-desc">
                 <span>캠 화면을 통해 수어를 인식합니다</span><br/>
                 <span>수어로 선택해 주세요!</span>

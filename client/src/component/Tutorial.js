@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import '../App.css';
 import {Route, Switch} from 'react-router-dom';
 import Main from "./Main";
@@ -6,8 +6,14 @@ import Select from "./Select";
 import "../css/tutorial.css"
 import { Link } from "react-router-dom";
 import {motion} from "framer-motion"
+import AOS from "aos"
+import "aos/dist/aos.css";
 
 export default function Tutorial(){
+    useEffect(() => {
+        AOS.init();
+      }, []);
+
     return (
         <>
         <motion.div 
@@ -30,9 +36,9 @@ export default function Tutorial(){
             
         </div>
         
-        <div className="square">
-            <div className="square1"></div>
-            <div className="square2"></div>
+        <div className="square" data-aos="flip-up">
+            <div className="square1" ></div>
+            <div className="square2" ></div>
             <div className="square3"></div>
         </div>
 

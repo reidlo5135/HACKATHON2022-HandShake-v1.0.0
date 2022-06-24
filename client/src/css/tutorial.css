@@ -1,6 +1,6 @@
 body{
     width: 100%;
-    height: 980px;
+    height: 1800px;
 }
 
 .tuto-title{
@@ -11,7 +11,7 @@ body{
     color:#3D84FC;
 }
 
-.sign-cam{
+.tutorial-cam{
     width: 600px;
     height: 600px;
     background-color: #eeeeee;
@@ -19,6 +19,11 @@ body{
     position: relative;
     bottom: 10px;
     z-index: 3;
+}
+
+.square{
+    position: absolute;
+    top:5%;
 }
 
 .square1{

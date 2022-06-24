@@ -12,4 +12,14 @@ router.post('/api/campus/gates', (req, res) => {
    })
 });
 
+router.post('/api/campus/gates/details/:name', (req, res) => {
+   const name = req.params.name;
+   connection.query(`SELECT * FROM tbl_gateway_${name}`, (error, rows, fields) => {
+      if(error) throw error;
+      console.log('CampusRouter DB INFO gates details name : ' + name);
+      console.log('CampusRouter DB INFO gates details rows : ' + JSON.stringify(rows));
+      res.send(rows);
+   });
+});
+
 module.exports = router;

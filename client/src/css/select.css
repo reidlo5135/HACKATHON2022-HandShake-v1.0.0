@@ -11,9 +11,9 @@ body{
 }
 
 .select{
-   display: flex;
-   text-align: center;
-   justify-content: space-around;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
 }
 
 .left-content{
@@ -31,8 +31,8 @@ body{
 .btn-selcet{
     width: 300px;
     height: 300px;
-    background-color: #005AFF;  
-    margin: 20px 20px;  
+    background-color: #005AFF;
+    margin: 20px 20px;
     border-radius: 39px;
     display: flex
 }

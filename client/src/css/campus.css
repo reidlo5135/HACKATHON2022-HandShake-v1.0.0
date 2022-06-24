@@ -72,3 +72,14 @@
     left: 76%;
     top: 8%;
 }
+
+.campus-slide{
+    position: relative;
+    left: 80%;
+    background-color: #eeeeee;
+}
+
+.campus-slide .slick-slider{
+    width: 600px;
+    background-color: #eeeeee;
+}

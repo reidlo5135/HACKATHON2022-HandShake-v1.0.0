@@ -5,6 +5,7 @@ import {motion} from "framer-motion"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 
 export default function Campus(){
     const [gateName, setGateName] = useState([]);
@@ -60,16 +61,21 @@ export default function Campus(){
         </div>
         <div className='contents'>
             <div className='left-contents'>
-                <Slider {...settings}>
+                <div className='campus-slide'>
+                    <Slider {...settings}>
 
-                {gateName.map(user => {
-                return (
-                <div key={user.id}>
-                             {user.name}
-                            </div>)
-                        })
-                    }
-                </Slider>
+                    {gateName.map(user => {
+                    return (
+                        <Link to='campus/detail' key={user.id}>
+                            <div>
+                                {user.name}
+                            </div>
+                        </Link>
+                                )
+                            })
+                        }
+                    </Slider>
+                </div>
             </div>
             <div className='right-contents'>
                 <div className="campus-cam">

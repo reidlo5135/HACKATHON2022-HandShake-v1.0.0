@@ -7,6 +7,7 @@ import Select from "./component/Select";
 import Campus from "./component/campus";
 import Food from "./component/Food";
 import {AnimatePresence} from "framer-motion";
+import Campusdetail from './component/Campus-detail';
 
 export default function App(){
     return (
@@ -18,6 +19,7 @@ export default function App(){
                     <Route path = '/select' component={Select}/>
                     <Route path = '/campus' component={Campus}/>
                     <Route path = '/food' component={Food}/>
+                    <Route path = '/campus/details' component={Campusdetail}/>
                 </Switch>
             </AnimatePresence>
         </div>

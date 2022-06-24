@@ -74,9 +74,31 @@ export default function Select(){
                     </div>
                 
                 <div className="square">
-                    <div className="square1"></div>
-                    <div className="square2"></div>
-                    <div className="square3"></div>
+                    <motion.div className="square1"
+                    initial={{ scale:0 }}
+                    animate={{ scale:1 ,rotateZ: 200}}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 1,
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 20, }}
+                    />
+                    <motion.div className="square2"
+                    initial={{ scale:0 }}
+                    animate={{ scale:1 ,rotateZ: 150}}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 1,
+                        type: "spring",
+                        stiffness: 290,
+                        damping: 20, }}/>
+                    <motion.div className="square3"
+                    initial={{ scale:0 }}
+                    animate={{ scale:1,rotateZ: 160}}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 1,
+                        type: "spring",
+                        stiffness: 260,
+                        damping: 10, }}/>
                 </div>
 
                 <div className="right-content">

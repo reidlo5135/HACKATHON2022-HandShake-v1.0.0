@@ -1,29 +1,17 @@
 import React,{useEffect} from 'react';
 import '../App.css';
-import Main from "./Main";
 import "../css/select.css"
 import { Link } from "react-router-dom";
 import Campus from "../img/campus.png"
 import Food from "../img/food.png"
 import Calender from "../img/calender.png"
-import One from "../img/one 1.png"
-import Two from "../img/two.png"
-import Three from "../img/three.png"
-import Four from "../img/four.png"
 import {motion} from "framer-motion"
 import AOS from "aos";
 
 export default function Select(){
-    const test = async () => {
-        const response = await fetch('/api/test');
-        const body = await response.json();
-        console.log(response);
-        console.log(body);
-    }
 
     useEffect(() => {
         AOS.init();
-        test();
       }, []);
       
     return (

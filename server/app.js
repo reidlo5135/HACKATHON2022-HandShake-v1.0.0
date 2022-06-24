@@ -9,6 +9,7 @@ const bodyParser = require('body-parser');
 const port = 5000;
 
 var serverRouter = require('./routes/server');
+var campusRouter = require('./routes/campus/campusRouter');
 
 var app = express();
 
@@ -22,6 +23,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.use('/', serverRouter);
+app.use('/', campusRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

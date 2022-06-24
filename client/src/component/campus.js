@@ -43,64 +43,45 @@ export default function Campus(){
         >
         
         <div className='campus-title'>
-        <div className='campus-figure1'></div>
-        <div className='campus-figure2'></div>
-        <motion.div 
-            initial={{ scale:0 }}
-            animate={{ scale:1 ,rotateZ: 360}}
-            transition={{ duration: 1,
-                type: "spring",
-                stiffness: 260,
-                damping: 20,}} 
-            className="campus-tit">
-            캠퍼스맵
-        </motion.div>
-        <div className='campus-figure3'></div>
-        <div className='campus-figure4'></div>
+            <div className='campus-figure1'></div>
+            <div className='campus-figure2'></div>
+            <motion.div 
+                initial={{ scale:0 }}
+                animate={{ scale:1 ,rotateZ: 360}}
+                transition={{ duration: 1,
+                    type: "spring",
+                    stiffness: 260,
+                    damping: 20,}} 
+                className="campus-tit">
+                캠퍼스맵
+            </motion.div>
+            <div className='campus-figure3'></div>
+            <div className='campus-figure4'></div>
         </div>
         <div className='contents'>
             <div className='left-contents'>
                 <Slider {...settings}>
-                    <div>
-                        <h3>홍지관</h3>
-                    </div>
-                    <div>
-                        <h3>한림관</h3>
-                    </div>
-                    <div>
-                        <h3>정보통신관</h3>
-                    </div>
-                    <div>
-                        <h3>수암관</h3>
-                    </div>
-                    <div>
-                        <h3>다산관</h3>
-                    </div>
-                    <div>
-                        <h3>전산관</h3>
-                    </div>
-                    <div>
-                        <h3>임곡관</h3>
-                    </div>
-                    <div>
-                        <h3>율곡관</h3>
-                    </div>
-                    <div>
-                        <h3>퇴계관</h3>
-                    </div>
+
+                {gateName.map(user => {
+                return (
+                <div key={user.id}>
+                             {user.name}
+                            </div>)
+                        })
+                    }
                 </Slider>
             </div>
-        <div className='right-contents'>
-            <div className="campus-cam">
-                
+            <div className='right-contents'>
+                <div className="campus-cam">
+                    
+                </div>
             </div>
-        </div>
-        </div>
+            </div>
 
-        <div className="tuto-desc">
-            <span>캠 화면을 통해 수어를 인식합니다</span><br/>
-            <span>원하시는 위치로 넘겨보세요!</span>
-        </div>
+            <div className="tuto-desc">
+                <span>캠 화면을 통해 수어를 인식합니다</span><br/>
+                <span>원하시는 위치로 넘겨보세요!</span>
+            </div>
         </motion.div>
         </>
     );

@@ -62,8 +62,7 @@ export default function Campus(){
                     <div className='left-contents'>
                         <div className='campus-slide'>
                             <Slider {...settings}>
-
-                                {gateName.map(user => {
+                                {gateName.map(user =>{
                                     return (
                                         <Link to={{
                                             pathname: '/gate/details',

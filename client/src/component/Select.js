@@ -48,9 +48,11 @@ export default function Select(){
 
                         <div className='three'>
                             <span>C</span>
+                            <Link to="/calendar">
                             <div className="calender btn-selcet">
                                 <img src={Calender} alt="학사 일정 아이콘"/>
                             </div>
+                            </Link>
                         </div>
 
                         <div className='three'>

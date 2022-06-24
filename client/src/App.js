@@ -6,6 +6,7 @@ import Tutorial from "./component/Tutorial";
 import Select from "./component/Select";
 import Campus from "./component/campus";
 import Food from "./component/Food";
+import Calendar from "./component/Calendar";
 import {AnimatePresence} from "framer-motion";
 import CampusDetail from './component/campusDetail';
 
@@ -19,6 +20,7 @@ export default function App(){
                     <Route path = '/select' component={Select}/>
                     <Route path = '/campus' component={Campus}/>
                     <Route path = '/food' component={Food}/>
+                    <Route path = '/calendar' component={Calendar}/>
                     <Route path = '/gate/details' component={CampusDetail}/>
                 </Switch>
             </AnimatePresence>

@@ -1,4 +1,5 @@
 import logo from '../../img/handshake_logo.png'
+import { Link } from "react-router-dom";
 import '../../css/newMain.css'
 
 export default function NewMain() {
@@ -10,8 +11,9 @@ export default function NewMain() {
                         <img src={logo}/><br/>
                         <span id="subtext">수어로만나는대림대학교</span> <br/>
                         <div>
-                            
-                            <button id="btn-start">시작하기</button>
+                            <Link to="/selectTest">
+                                <button id="btn-start">시작하기</button>
+                            </Link>
                         </div>
                     </div>
                 </div>

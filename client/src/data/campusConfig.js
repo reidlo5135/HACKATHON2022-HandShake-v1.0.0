@@ -1,5 +1,5 @@
 const gateNames = new Map()
-    .set('다산관', 'suam')
+    .set('다산관', 'dasan')
     .set('수암관', 'suam')
     .set('생활관', 'shk')
     .set('율곡관', 'yk')

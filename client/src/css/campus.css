@@ -1,0 +1,61 @@
+.right-content{
+    position: relative;
+    width: 50%;
+    right: 250px;
+    top: 110px;
+    z-index: 5;
+}
+
+.Figure1{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    left: 1339px;
+    top: 58px;
+    background: #3D84FC;
+}
+
+.Figure2{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    left: 1284px;
+    top: 113px;
+    background: #3D84FC;
+    transform: rotate(90deg);
+}
+
+.Figure3{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    left: 1771px;
+    top: 265px;
+    background: #3D84FC;
+    transform: rotate(-90deg)
+}
+
+.Figure4{
+    position: absolute;
+    width: 150px;
+    height: 40px;
+    left: 1716px;
+    top: 321px;
+    background: #3D84FC;
+    transform: rotate(-180deg);
+}
+
+.right-content{
+    position: relative;
+    width: 50%;
+    left: 700px;
+    top: 200px;
+    z-index: 5;
+}
+
+.cam{
+    float: right;
+    width: 500px;
+    height: 500px;
+    background-color: #eeeeee;
+}

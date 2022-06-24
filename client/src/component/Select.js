@@ -14,9 +14,17 @@ import {motion} from "framer-motion"
 import AOS from "aos";
 
 export default function Select(){
+    const test = async () => {
+        const response = await fetch('/api/test');
+        const body = await response.json();
+        console.log(response);
+        console.log(body);
+    }
+
     useEffect(() => {
         AOS.init();
-      })
+        test();
+      }, []);
       
     return (
         <>

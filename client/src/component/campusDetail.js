@@ -53,14 +53,14 @@ export default function CampusDetail(){
                     return(
                         <>       
                         <div className='cd-desc' >
-                            {detail.fb1 === null ? null : <h2 className={'dc-fb1'}>{detail.fb1}</h2>}
-                            {detail.f1 === null ? null : <h2 className={'dc-f1'}>{detail.f1}</h2>}
-                            {detail.f === null ? null : <h2 className={'dc-f2'}>{detail.f2}</h2>}
-                            {detail.f3 === null ? null : <h2 className={'dc-f3'}>{detail.f3}</h2>}
-                            {detail.f4 === null ? null : <h2 className={'dc-f4'}>{detail.f4}</h2>}
-                            {detail.f5 === null ? null : <h2 className={'dc-f5'}>{detail.f5}</h2>}
-                            {detail.f6 === null ? null : <h2 className={'dc-f6'}>{detail.f6}</h2>}
-                            {detail.f7 === null ? null : <h2 className={'dc-f7'}>{detail.f7}</h2>}
+                            {detail.fb1 === undefined  ? <></> : <h2 className={'dc-fb1'}>{detail.fb1}</h2>}
+                            {detail.f1 === undefined  ? <></> : <h2 className={'dc-f1'}>{detail.f1}</h2>}
+                            {detail.f2 === undefined  ? <></> : <h2 className={'dc-f2'}>{detail.f2}</h2>}
+                            {detail.f3 === undefined  ? <></> : <h2 className={'dc-f3'}>{detail.f3}</h2>}
+                            {detail.f4 === undefined  ? <></> : <h2 className={'dc-f4'}>{detail.f4}</h2>}
+                            {detail.f5 === undefined  ? <></> : <h2 className={'dc-f5'}>{detail.f5}</h2>}
+                            {detail.f6 === undefined ? <></> : <h2 className={'dc-f6'}>{detail.f6}</h2>}
+                            {detail.f7 === undefined ? <></> : <h2 className={'dc-f7'}>{detail.f7}</h2>}
                             {/* {detail.map} */}
                         </div>           
                         </>

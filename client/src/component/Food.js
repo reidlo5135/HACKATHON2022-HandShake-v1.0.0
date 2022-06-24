@@ -11,8 +11,22 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function Food(){
 
+    const getFood = async () => {
+        try {
+            const response = await fetch(`/api/campus/gates/details/${food}`, {method: 'post'});
+            const body = await response.json();
+            console.log('campusDetail.js getGateDetails response : ', response);
+            console.log('campusDetail.js getGateDetails body : ', body);
+            setDetails(body);
+            console.log('campusDetail.js getGateDetails body : ', details);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
     useEffect(() => {
         AOS.init();
+        getFood();
       }, []);
 
       const settings = {

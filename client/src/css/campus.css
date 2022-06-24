@@ -1,61 +1,74 @@
-.right-content{
+.contents{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-contents{
     position: relative;
+    right:11%;
+    z-index: 6;
+}
+
+.right-contents{
+    position: relative;
+    right: 10%;
     width: 50%;
-    right: 250px;
-    top: 110px;
     z-index: 5;
 }
 
-.Figure1{
-    position: absolute;
-    width: 150px;
-    height: 40px;
-    left: 1339px;
-    top: 58px;
-    background: #3D84FC;
-}
-
-.Figure2{
-    position: absolute;
-    width: 150px;
-    height: 40px;
-    left: 1284px;
-    top: 113px;
-    background: #3D84FC;
-    transform: rotate(90deg);
-}
-
-.Figure3{
-    position: absolute;
-    width: 150px;
-    height: 40px;
-    left: 1771px;
-    top: 265px;
-    background: #3D84FC;
-    transform: rotate(-90deg)
-}
-
-.Figure4{
-    position: absolute;
-    width: 150px;
-    height: 40px;
-    left: 1716px;
-    top: 321px;
-    background: #3D84FC;
-    transform: rotate(-180deg);
-}
-
-.right-content{
-    position: relative;
-    width: 50%;
-    left: 700px;
-    top: 200px;
-    z-index: 5;
-}
-
-.cam{
+.campus-cam{
     float: right;
     width: 500px;
     height: 500px;
     background-color: #eeeeee;
+}
+
+.campus-figure1{
+    position: relative;
+    width: 130px;
+    height: 30px;
+    left: 1282px;
+    top: 30px;
+    background: #3D84FC;
+}
+
+.campus-figure2{
+    position: relative;
+    width: 130px;
+    height: 30px;
+    left: 1232px;
+    top: 50px;
+    background: #3D84FC;
+    transform: rotate(90deg);
+    z-index: 6;
+}
+
+.campus-figure3{
+    position: relative;
+    width: 130px;
+    height: 30px;
+    left: 1771px;
+    top: 120px;
+    background: #3D84FC;
+    transform: rotate(-90deg);
+}
+
+.campus-figure4{
+    position: relative;
+    width: 130px;
+    height: 30px;
+    left: 1700px;
+    top: 140px;
+    background: #3D84FC;
+    transform: rotate(-180deg);
+}
+
+.campus-tit{
+    position: absolute;
+    background-color: #eeeeee;
+    padding: 3% 5% 3% 5%;
+    left: 76%;
+    top: 8%;
 }

@@ -51,7 +51,7 @@ export default function Food(){
                 <div className='f-left-contents'>
                 <Slider {...settings}>
                 <div className='day'>월요일</div>
-                <div class="container">
+                <div class="f-container">
                     <table>
                         <thead>
                             <tr>

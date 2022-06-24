@@ -1,4 +1,4 @@
-.food-figure1{
+.calendar-figure1{
     position: relative;
     width: 130px;
     height: 30px;
@@ -7,7 +7,7 @@
     background: #3D84FC;
 }
 
-.food-figure2{
+.calendar-figure2{
     position: relative;
     width: 130px;
     height: 30px;
@@ -18,7 +18,7 @@
     z-index: 6;
 }
 
-.food-figure3{
+.calendar-figure3{
     position: relative;
     width: 130px;
     height: 30px;
@@ -28,7 +28,7 @@
     transform: rotate(-90deg);
 }
 
-.food-figure4{
+.calendar-figure4{
     position: relative;
     width: 130px;
     height: 30px;
@@ -38,7 +38,7 @@
     transform: rotate(-180deg);
 }
 
-.food-tit{
+.calendar-tit{
     position: absolute;
     background-color: #eeeeee;
     padding: 3% 5% 3% 5%;
@@ -46,7 +46,7 @@
     top: 8%;
 }
 
-.f-contents{
+.C-contents{
     margin-top: 5%;
     margin-bottom: 5%;
     display: flex;
@@ -54,20 +54,38 @@
 }
 
 
-.f-left-contents{
+.C-left-contents{
     position: relative;
     left: 18%;
     z-index: 6;
 }
 
-.f-right-contents{
+.C-left-contents .slick-slider{
+    position: relative;
+    top: 20%;
+}
+
+.C-right-contents{
     position: relative;
     right: 5%;
     width: 50%;
     z-index: 5;
 }
 
-.f-container {
+
+.c-left-contents{
+    position: relative;
+    left: 18%;
+    z-index: 6;
+}
+
+.month{
+    font-size: 32px;
+    font-weight: bold;
+    color: #3D84FC;
+}
+/*캘린더*/
+.c-container {
     position: absolute;
     top: 534%;
     left: 70.5%;

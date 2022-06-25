@@ -30,6 +30,10 @@ export default function SelectTest () {
                 console.log("선택값은 " +redbull)
                 if (redbull === 'A') {
                     window.location.href = "/campus"
+                } else if (redbull === 'B') {
+                    window.location.href = "/food"
+                } else if (redbull === 'C') {
+                    window.location.href = "/calendar"
                 }
                 looping = 0;
               } else {
@@ -115,7 +119,7 @@ export default function SelectTest () {
                     <img style ={{boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px", borderRadius : "48px", gridColumnStart:"1" , gridColumnEnd:"2",gridRowStart:"1",gridRowEnd:"2" }} src={intro} width = "320px"/>
                     <img style ={{ boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px", borderRadius : "48px",gridColumnStart:"2" , gridColumnEnd:"3",gridRowStart:"1",gridRowEnd:"2" }} src={todayMeal} width = "320px"/>
                     <img style={{boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px", borderRadius : "48px",}} src={monthCalandar} width = "320px"/>
-                    <img style = {{boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px", borderRadius : "48px",}} src={intro} width = "320px"/>
+                    
         
                 </div>
              <div style={{  display : "flex" , justifyContent : "center", alignItems : "center",width : "40vw", height : "80vh"}}>

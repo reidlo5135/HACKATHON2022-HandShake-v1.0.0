@@ -144,25 +144,20 @@ width: 50%;
 }
 
 .campus-img{
-  margin-top: 13%;
-}
-
-.campus-link{
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 32px;
-  color: #ffffff;
-
-  float: right;
-  width: 500px;
-  height: 500px;
-  background-color: #eeeeee;
-  margin: 10% 40% 0 0%;
-}
-.campus-link{
-text-decoration: none;
-font-weight: bold;
-font-size: 32px;
-color: #ffffff;
+  margin-top: 10%;
+  height: 400px;
+  width: 100%;
 
 }
+
+.contents .campus-img{
+  margin-top: -7%;
+    height: 4s00px;
+    width: 100%;
+}
+
+.cd-right-contents #webcam-container canvas{
+  margin-left: 0;
+} 
+
+

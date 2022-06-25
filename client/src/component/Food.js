@@ -2,19 +2,19 @@ import React,{useEffect,useState} from 'react';
 import '../App.css';
 import Main from "./Main";
 import "../css/food.css"
-
 import {motion} from "framer-motion"
 import AOS from "aos";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Hlogo from "../img/handshake.png";
 
 export default function Food(){
     const [details, setDetails] = useState([]);
 
     const getFood = async () => {
         try {
-            const response = await fetch(`/ap1/food/all/`, {method: 'post'});
+            const response = await fetch(`/api/food/all/`, {method: 'post'});
             const body = await response.json();
             console.log('campusDetail.js getGateDetails response : ', response);
             console.log('campusDetail.js getGateDetails body : ', body);
@@ -47,52 +47,49 @@ export default function Food(){
             exit={{ opacity: 0 }}
             transition={{ ease: "easeOut", duration: 1 }}
         >
-            
-            <div className='food-figure1'></div>
-            <div className='food-figure2'></div>
-            <motion.div 
-                initial={{ scale:0 }}
-                animate={{ scale:1 ,rotateZ: 360}}
-                transition={{ duration: 1,
-                    type: "spring",
-                    stiffness: 260,
-                    damping: 20,}} 
-                className="food-tit">
-                오늘의 메뉴
-            </motion.div>
-            <div className='food-figure3'></div>
-            <div className='food-figure4'></div>
-
+            <div className='f-logo'>
+                <img src={Hlogo} alt="handshake 로고" className='h-logo'/>
+            </div>
             <div className='f-contents'>
                 <div className='f-left-contents'>
                 <Slider {...settings}>
-                <div className='day'>월요일</div>
-                <div class="f-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Corner1</th>
-                                <th>Corner2</th>
-                                <th>Corner3</th>
-                                <th>Corner4</th>
-                                <th>Corner5</th>
-                                <th>Corner6</th>
-                                <th>PLUS+</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                                <td>Cell 6</td>
-                                <td>Cell 7</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                
+                    
+                    {details.map(detail =>{
+                                    return (
+                                        <div className="f-container">
+                                            <div className='food-title' key={1}>
+                                                {detail.day}
+                                            </div>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Corner1</th>
+                                                        <th>Corner2</th>
+                                                        <th>Corner3</th>
+                                                        <th>Corner4</th>
+                                                        <th>Corner5</th>
+                                                        <th>Corner6</th>
+                                                        <th>PLUS+</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>{detail.corner1 === undefined? "-"  : detail.corner1}</td>
+                                                        <td>{detail.corner2 === undefined? "-" : detail.corner2}</td>
+                                                        <td>{detail.corner3 === undefined? "-"  : detail.corner3}</td>
+                                                        <td>{detail.corner4 === undefined? "-"  : detail.corner4}</td>
+                                                        <td>{detail.corner5 === undefined? "-"  : detail.corner5}</td>
+                                                        <td>{detail.corner6 === undefined? "-"  : detail.corner6}</td>
+                                                        <td>{detail.PLUS === undefined? "-"  : detail.PLUS}</td>
+                                                    </tr>
+                                                </tbody>
+                                        </table>
+                                        </div>
+                                    )
+                                })
+                            }
+                
                 </Slider>
                 </div>
 

@@ -14,8 +14,7 @@ import gateNames from '../data/campusConfig';
 import {useRef} from 'react';
 import Spin from '../img/spin.gif'
 import $ from 'jquery';
-import Hlogo from "../img/handshake.png";
-import Hg from "../img/Hg.png";
+
 import Ds from "../img/Ds.png";
 import Sa from "../img/Sa.png";
 import Sh from "../img/Sh.png";

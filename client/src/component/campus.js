@@ -14,7 +14,6 @@ import gateNames from '../data/campusConfig';
 import {useRef} from 'react';
 import Spin from '../img/spin.gif'
 import $ from 'jquery';
-
 import Ds from "../img/Ds.png";
 import Sa from "../img/Sa.png";
 import Sh from "../img/Sh.png";
@@ -37,6 +36,7 @@ const URL = "https://teachablemachine.withgoogle.com/models/DKLnLWS-K/"
 export default function Campus(){
 
     const [gateName, setGateName] = useState([]);
+    const sliderRef = useRef();
     let model, webcam, labelContainer, maxPredictions;
     let status = '';
     let temp = 'None';
@@ -87,6 +87,8 @@ export default function Campus(){
                     choice(stat)
                     clearInterval(interval);
                     // window.location.reload();
+                } else if (redbull === 'Past') {
+                    window.location.href = '/selectTest'
                 }
                 looping = 0;
               } else {
@@ -134,7 +136,7 @@ export default function Campus(){
        
     }
 
-    const sliderRef = useRef(null);
+    
 
     function next() {
         console.log("next")
@@ -191,14 +193,14 @@ export default function Campus(){
                 <div className='contents'>
                     <div className='left-contents'>
                         <div className='campus-slide'>
-                            <Slider {...settings}>
-                                {gateName.map(user =>{
+                            <Slider ref={sliderRef} {...settings}>
+                                {gateName.map((user,index) =>{
                                     return (
                                         <Link to={{
                                             pathname: '/gate/details',
                                             state: user.name
-                                        }} key={user.id} className="campus-link">
-                                            {user.name !== "다산관" ? <></> : <div className={'campus-img'}><p>다산관</p><img src={Ds} alt="다산관" /></div>}
+                                        }} key={user.id} id={buildArray[index]} className="campus-link">
+                                            {user.name !== "다산관" ? <></> : <div className={'campus-img'}><p>다산관</p><img src={Ds} alt="다산관"/></div>}
                                             {user.name !== "수암관" ? <></> : <div className={'campus-img'}><div>수암관</div><img src={Sa} alt="수암관"/></div>}
                                             {user.name !== "생활관" ? <></> : <div className={'campus-img'}><div>생활관</div><img src={Sh} alt="생활관"/></div>}
                                             {user.name !== "율곡관" ? <></> : <div className={'campus-img'}><div>율곡관</div><img src={Ug} alt="율곡관"/></div>}

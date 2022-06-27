@@ -7,7 +7,7 @@
 
 .left-contents{
     position: relative;
-    right:11%;
+    right:20%;
     z-index: 6;
 }
 
@@ -50,7 +50,9 @@
 }
 
 .campus-img > img{
-    margin-top: 10%;
+    margin-top: -2%;
+    height: 438px;
+    width: 500px;
 }
 
 .campus-img >p{
@@ -77,3 +79,16 @@ text-decoration: none;
 #webcam-container canvas {
     margin-left : 500px;
 }
+
+.campus-link{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 32px;
+    color: #ffffff;
+    margin-top: 20%;
+    float: right;
+    width: 500px;
+    height: 500px;
+    background-color: #3D84FC;
+    text-align: center;
+  }

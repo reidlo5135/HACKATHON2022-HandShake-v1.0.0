@@ -1,0 +1,29 @@
+.one > span ,.two > span,.three > span,.four > span{
+    font-size: 36px;
+    font-weight: bold;
+    color:#3D84FC
+}
+
+.A {
+    position: relative;
+    left: 44%;
+}
+
+
+.B {
+    position: relative;
+    left: 44%;
+}
+
+.C {
+    position: relative;
+    left: 44%;
+}
+.Select{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ST-cam{
+    margin-right: 200px;
+}

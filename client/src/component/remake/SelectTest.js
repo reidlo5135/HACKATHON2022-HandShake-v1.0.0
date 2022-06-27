@@ -6,6 +6,7 @@ import * as tmImage from '@teachablemachine/image';
 import {useEffect} from 'react';
 import logo from '../../img/handshake_logo.png'
 import Spin from '../../img/spin.gif'
+import "../../css/selectTest.css"
 
 const URL = "https://teachablemachine.withgoogle.com/models/riXpFHlAu/";
 
@@ -116,15 +117,36 @@ export default function SelectTest () {
             <div style={{display : "flex",width : "100vw", height : "100vh", justifyContent : "space-around", alignItems : "center"}}>
                 <div style={{width : "50px", height : "10px"}}></div>
                 <div style={{ display : "grid", width : "40vw", height : "80vh", justifyItems : "center", alignItems : "center"}}>
-                    <img style ={{boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px", borderRadius : "48px", gridColumnStart:"1" , gridColumnEnd:"2",gridRowStart:"1",gridRowEnd:"2" }} src={intro} width = "320px"/>
-                    <img style ={{ boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px", borderRadius : "48px",gridColumnStart:"2" , gridColumnEnd:"3",gridRowStart:"1",gridRowEnd:"2" }} src={todayMeal} width = "320px"/>
-                    <img style={{boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px", borderRadius : "48px",}} src={monthCalandar} width = "320px"/>
-                    
-        
+                   
+                    <div className='Select'>
+                    <div className='one'>
+                        <span className='A'>A</span>
+                        <div className="food btn-selcet">
+                            <img style ={{boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px", borderRadius : "48px", gridColumnStart:"1" , gridColumnEnd:"2",gridRowStart:"1",gridRowEnd:"2" }} src={intro} width = "320px"/>
+                        </div>
+                    </div>
+
+                    <div className='two'>
+                        <span className='B'>B</span>
+                        <div className="food btn-selcet">
+                            <img style ={{ boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px", borderRadius : "48px",gridColumnStart:"2" , gridColumnEnd:"3",gridRowStart:"1",gridRowEnd:"2" }} src={todayMeal} width = "320px"/>
+                        </div>
+                    </div>
+
+                    <div className='three'>
+                        <span className='C'>C</span>
+                        <div className="food btn-selcet">
+                            <img style={{boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px", borderRadius : "48px",}} src={monthCalandar} width = "320px"/>
+                        </div>
+                    </div>
                 </div>
+                </div>
+                
              <div style={{  display : "flex" , justifyContent : "center", alignItems : "center",width : "40vw", height : "80vh"}}>
+                <div className='ST-cam'>
                 <div id="webcam-container">
                     <img src={Spin}/>
+                </div>
                 </div>
                 {/* <div id="label-container"></div> */}
              </div>

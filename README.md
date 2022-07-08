@@ -2,7 +2,8 @@
 2022년 대림대학교 컴퓨터정보학부 해커톤(HACKATHON) TEAM I-DLE 프로젝트<br>
 2022-06-23 ~ 2022-06-25<br>
 팀원: 진승범, 강준모, 김동호<br>
-<b>VERSION: 1.0.0</b>
+<b>VERSION: 1.0.0</b><br>
+<b>최우수상 수상작</b>
 
 ## **HANDSHAKE(핸드쉐이크)란?**
 <b>HANDSHAKE</b>란 AI(Artificial-Intelligence)를 활용하여 청각장애인을 위한 대림대학교 정보 소개 Web Application<br><br>

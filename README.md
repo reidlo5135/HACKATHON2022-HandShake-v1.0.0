@@ -32,7 +32,7 @@
 
 - Design - Figma, Adobe PhotoShop, Adobe XD
 - Frontend - React.js, HTML5, CSS3, JavaScript, TensorFlow, Teachable Machine
-- Backend - Express.js, Node.js, NodeMon, Npm, JavaScript, REST API
+- Backend - Express.js, Node.js, JavaScript
 - Database - MySQL, AWS RDS
 - IDE - IntelliJ IDEA, Visual Studio Code
 

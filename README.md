@@ -32,8 +32,8 @@
 
 - Design - Figma, Adobe PhotoShop, Adobe XD
 - Frontend - React.js, HTML5, CSS3, JavaScript, TensorFlow, Google Teachable Machine
-- Backend - Express.js, Node.js, JavaScript
-- Database - MySQL, AWS RDS
+- Backend - Node-Express.js, JavaScript
+- Database - MySQL 8.0, AWS RDS
 - IDE - IntelliJ IDEA, Visual Studio Code
 
 ## <b>주요기능</b>

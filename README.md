@@ -7,7 +7,7 @@
 <b>VERSION: 1.0.0</b>
 
 ## **HANDSHAKE(핸드쉐이크)란?**
-<b>HANDSHAKE</b>란 AI(Artificial-Intelligence)를 활용하여 청각장애인을 위한 대림대학교 정보 소개 Web Application<br><br>
+<b>HANDSHAKE</b>란 AI(Artificial-Intelligence)를 활용하여 청각장애인을 위한 대림대학교 정보 소개 웹 서비스 입니다.<br><br>
 <b>HANDSHAKE</b>는 사용자가 취하는 모습을 촬영 후 AI로 인식하여 원하는 기능을 맞추어 제공하는 웹 서비스입니다. <br><br>
 
 ## <b>사용기술</b>
